@@ -5,7 +5,7 @@ const endpoint = 'contacts';
 
 axios.defaults.baseURL = BASE_URL;
 
-export async function getContacts() {
+export async function fetchContacts() {
   try {
     const { data } = await axios.get(`${endpoint}`);
     return data;
