@@ -4,6 +4,7 @@ import {
   addNewContact,
   deleteContact,
 } from 'redux/contactsOperations';
+import { changeFilter } from 'redux/contactsActions';
 
 const contacts = createReducer([], {
   [fetchContacts.fulfilled]: (_, { payload }) => [...payload],
@@ -33,8 +34,13 @@ const error = createReducer(null, {
   [deleteContact.rejected]: (_, { payload }) => payload,
 });
 
+const filter = createReducer('', {
+  [changeFilter]: (_, { payload }) => payload,
+});
+
 export const contactsReducers = combineReducers({
   contacts,
+  filter,
   loading,
   error,
 });

@@ -1,4 +1,10 @@
-import { Container, Section, AddContactForm, ContactsList } from 'components';
+import {
+  Container,
+  Section,
+  AddContactForm,
+  ContactsList,
+  Filter,
+} from 'components';
 
 export function ContactsPage() {
   return (
@@ -8,6 +14,7 @@ export function ContactsPage() {
         <AddContactForm />
       </Section>
       <Section>
+        <Filter />
         <ContactsList />
       </Section>
     </Container>
