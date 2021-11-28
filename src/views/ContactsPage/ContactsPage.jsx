@@ -1,4 +1,4 @@
-import { Container, Section, AddContactForm } from 'components';
+import { Container, Section, AddContactForm, ContactsList } from 'components';
 
 export function ContactsPage() {
   return (
@@ -6,6 +6,9 @@ export function ContactsPage() {
       <h1>Your Contacts</h1>
       <Section>
         <AddContactForm />
+      </Section>
+      <Section>
+        <ContactsList />
       </Section>
     </Container>
   );
