@@ -1,5 +1,7 @@
+import { ContactsPage } from 'views';
+
 function App() {
-  return <div className="App"></div>;
+  return <ContactsPage />;
 }
 
 export default App;
